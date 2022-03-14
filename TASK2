@@ -1,0 +1,13 @@
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string str="Hello 123 word";
+            string search=Console.ReadLine();
+            Console.WriteLine(str.ToUpper().Contains(search.ToUpper())); 
+        }
+    }
+}
