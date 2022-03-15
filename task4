@@ -1,0 +1,20 @@
+ internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = { 40, 300, 1000, 35000 };
+            int number = 7;
+            Add(ref array, number);
+            foreach(int num in array)
+            {
+                Console.WriteLine("Number is : {0}",num);
+            }
+
+        }
+        static void Add(ref int[] numbers,int number)
+        {
+            Array.Resize(ref numbers, numbers.Length+1);
+            numbers[numbers.Length-1] = number;
+        }
+    }
+}
